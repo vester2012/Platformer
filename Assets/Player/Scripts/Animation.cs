@@ -16,9 +16,15 @@ namespace AnimationControl
         }
 
         // Update is called once per frame
-        void Update()
+        void Update() 
         {
+            Debug.Log("is moving" + _player.IsMoving);
+            Debug.Log("isGrounded" + _player._isGrounded);
+            Debug.Log("velocityY" + _player._rb.velocity.y);
+            
             _animator.SetBool("isMove", _player.IsMoving);
+            _animator.SetBool("isGrounded", _player._isGrounded);
+            _animator.SetFloat("velocityY", _player._rb.velocity.y);
         }
     }
 }

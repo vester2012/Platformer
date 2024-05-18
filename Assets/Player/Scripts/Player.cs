@@ -20,7 +20,7 @@ namespace PlayerSpace {
         
         private bool _isFlip = true;
         
-        private Rigidbody2D _rb;
+        internal Rigidbody2D  _rb;
 
         private MovementController _movementController;
     

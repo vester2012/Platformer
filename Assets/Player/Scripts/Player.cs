@@ -17,7 +17,6 @@ namespace PlayerSpace {
         private bool _isMoving;
         public bool IsMoving => _isMoving;
         
-        
         private bool _isFlip = true;
         
         internal Rigidbody2D  _rb;

@@ -5,7 +5,7 @@ namespace PlayerSpace {
     {
         [Header("Movement")]
         [SerializeField] private float _speed = 1;
-        [SerializeField] private float _jumpForce = 1;
+        [SerializeField] private float _jumpForce = 2;
 
         [Header("CollisionInfo")]
         [SerializeField] private Transform _checkTransform;
@@ -23,7 +23,7 @@ namespace PlayerSpace {
 
         private MovementController _movementController;
     
-          void Start()
+        void Start()
         {
             _movementController = GetComponent<MovementController>();
             _rb = GetComponent<Rigidbody2D>();
@@ -44,7 +44,6 @@ namespace PlayerSpace {
         
         internal void Jump()
         {
-            
             if (_isGrounded)
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
@@ -69,7 +68,10 @@ namespace PlayerSpace {
                 transform.Rotate(0, 180, 0);
             }
         }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.name == "Enemy") Destroy(this.gameObject);
+        }
     }
 }
-
-

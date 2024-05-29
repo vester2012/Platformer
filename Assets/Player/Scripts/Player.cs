@@ -71,7 +71,14 @@ namespace PlayerSpace {
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.name == "Enemy") Destroy(this.gameObject);
+            if (other.gameObject.name == "Enemy" && other.collider.name == "Collider2")
+            {
+                Destroy(this.gameObject);
+            }
+            else if (other.gameObject.name == "Enemy" && other.collider.name == "Collider1")
+            {
+                Destroy(other.gameObject);
+            }
         }
     }
 }

@@ -50,6 +50,8 @@
     <Compile Include="Assets/Player/Scripts/Player.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Player/Scripts/MovementController.cs" />
+    <Compile Include="Assets/Traps/Trap.cs" />
+    <Compile Include="Assets/Traps/TrapFire.cs" />
     <Compile Include="Assets/Enemy/Scripts/AnimationEnemy.cs" />
     <None Include="Library/PackageCache/com.unity.modules.subsystems@1.0.0/package.json" />
     <None Include="Library/PackageCache/com.unity.modules.jsonserialize@1.0.0/package.json" />

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace PlayerSpace {
     public class Player : MonoBehaviour
@@ -73,6 +74,7 @@ namespace PlayerSpace {
         {
             if (other.gameObject.name == "Enemy" && other.collider.name == "Collider2")
             {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 Destroy(this.gameObject);
             }
             else if (other.gameObject.name == "Enemy" && other.collider.name == "Collider1")

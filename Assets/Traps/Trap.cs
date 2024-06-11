@@ -8,7 +8,7 @@ public class Trap : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("MenuScene");
             Destroy(collision.gameObject);
         }
     }

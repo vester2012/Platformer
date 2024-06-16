@@ -77,10 +77,10 @@ namespace PlayerSpace {
                 SceneManager.LoadScene("MenuScene");
                 Destroy(this.gameObject);
             }
-            else if (other.gameObject.name == "Enemy" && other.collider.name == "Collider1")
+            /*else if (other.gameObject.name == "Enemy" && other.collider.name == "Collider1")
             {
                 Destroy(other.gameObject);
-            }
+            }*/
         }
     }
 }

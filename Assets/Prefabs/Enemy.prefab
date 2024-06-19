@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.5
-  _checkTransform: {fileID: 0}
+  _checkTransform: {fileID: 1266420937987215594}
 --- !u!50 &2574243664085256706
 Rigidbody2D:
   serializedVersion: 4
